@@ -14,13 +14,21 @@ namespace Trivia
 
         public static void Main(String[] args)
         {
+            int seed = 53715;
+            for (int n=1; n<25; n++) {
+                RunGameOnce(seed);
+            }
+        }
+
+        private static void RunGameOnce(int seed)
+        {
             Game aGame = new Game();
 
             aGame.add("Chet");
             aGame.add("Pat");
             aGame.add("Sue");
 
-            Random rand = new Random();
+            Random rand = new Random(seed);
 
             do
             {
@@ -39,10 +47,7 @@ namespace Trivia
 
 
             } while (notAWinner);
-
         }
-
-
     }
 
 }
