@@ -17,13 +17,9 @@ namespace Trivia
             Name = name;
         }
 
-        private string name;
-
-        public string Name
-        {
-            get { return name; }
-            private set { name = value; }
-        }
-
+        public string Name { get; private set; }
+        public int Purse { get; set; }
+        public int Position { get; set; }
+        public bool IsInPenaltyBox { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace Trivia
         public static void Main(String[] args)
         {
             int seed = 53715;
-            for (int n=1; n<25; n++) {
+            for (int n=1; n<3; n++) {
                 RunGameOnce(seed);
             }
         }
